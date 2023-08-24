@@ -1,0 +1,11 @@
+[data-carousel-item] {
+    transition: opacity 0.4s ease-out; /* Adds a smooth transition effect */
+    opacity: 0;  /* Set all carousel items to be transparent by default */
+    display: block; /* Instead of hiding with 'hidden' class, we'll control visibility with opacity */
+    visibility: hidden; /* Ensures that the invisible slides don't block clicks on the visible slide */
+}
+
+[data-carousel-item="active"] {
+    opacity: 1; /* The active item is fully visible */
+    visibility: visible;
+}
